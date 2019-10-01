@@ -1,7 +1,7 @@
 # Senseye Coding Challenge
 
 ## Introduction
-This repository is my solution of the problem presented by Senseye, which was to create a solution capable of producing masks given a set pictures of eyes. My solution was to train a UNet model based off resnet18 to create a image segmentation program which accepts images as inputs and returns .png mask images as output. 
+This repository is my solution of the problem presented by Senseye, which was to create a program capable of producing masks given a set pictures of eyes. My solution was to train a UNet model based off resnet18 to create a image segmentation program which accepts images as inputs and returns .png mask images as output. 
 
 ## Contents of Repo
 This repository contains the following files and folders:
