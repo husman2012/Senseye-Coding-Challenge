@@ -39,6 +39,8 @@ conda activate fastai
 This should create an environment named fastai with everything ready to use the application.
 
 ## Usage
+The user only needs to be concerned with train.py and create_masks.py. The user is able to create and train a model with train.py and then immediately run predictions and output masks with create_masks.py. Note that a trained model must be present to run the prediction otherwise create_masks.py will not work.
+
 ### train.py
 This script is capable of taking several arguments, namely: directory, epochs, learning rate, masks directory, images directory, and batch size. One important note, if the masks and images directories have different names, they must be present in the main directory, similar to how imgs_small and masks_small are present in the Solution_file directory. 
 This script requires no arguments except for the Solution_file directory, which may be renamed as long as the argument is supplied but must have the same file structure. To run the file, ensure the terminal is in the directory and run:
@@ -60,6 +62,8 @@ Example of running with all arguments specified:
 ```
 python create_masks.py diff_directory --pred_dir diff_input_folder --save_dir diff_output_folder
 ```
+
+Multiple masks can be outputed but simply dropping all desired images into the input folder
 
 ## Notes
 The other files are simply utilities for the scripts. Technically speaking, this command-line application could be applied to any image segmentation problem based on the way it is written. Nothing about the given dataset has been hardcoded except for the directories it expects and codes.txt file which determines the number of classifiable sections in the provided images.
