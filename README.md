@@ -24,7 +24,7 @@ Within Solution_Files are the following:
 
 Each folder contains a single image that may be deleted. The image is only present to prevent github destroying the folder, which is what it tends to do with empty folders. The application expects training files to be located in imgs_small and masks_small, however the names may be changed as long as the proper arguments are supplied when calling the training script. The same goes for input_folder and output_folder. The usage will be explained below.
 
-##Setting up the environment
+## Setting up the environment
 This application requires FastAI, and other common machine learning libraries. The environment.yml file is provided to allow anyone to setup the environment and run the program. To setup the environment, run the following in anaconda while in the same directory as the environment.yml file:
 
 ```
